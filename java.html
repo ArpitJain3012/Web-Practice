@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="anime.css">
+    <title>JavaScript</title>
+    <script src="myJavascript.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body class="navbar-javaScript" style="margin: 0;">
+    <ul class="topnav">
+        <li><a class="active" href="navbar-horizontal.html">Home</a></li>
+        <li><a href="animeList.html">Anime List</a></li>
+        <li><a href="java.html">JavaScript</a></li>
+        <li><a href="jquery.html">JQuery</a></li>
+        <li><a href="boot.html">Bootstrap</a></li>
+        <li><a href="example.html">Examples</a></li>
+        <li class="right"><a href="#about">About</a></li>
+    </ul>
+    <div style="margin-left: 20px;">
+        <div class="javasc" style="margin-top: 60px;">
+
+            <h2>First Example</h2>
+
+            <p id="demo">Content of this para will get change when the button gets clicked!!</p>
+
+            <button type="button" onclick="firstJava()">Click me!</button>
+
+        </div>
+        <hr>
+        <div class="javasc" id="hide">
+
+            <h2>Second Example</h2>
+
+
+            <p>In this example we will switch on and off bulb by changing source value of image attritube src..</p>
+
+            <button onclick="SecondEx()">Turn on bulb!</button>
+
+            <img id="bulb" src="bulboff.png" alt="bulboff" style="width: 100px;">
+
+            <button onclick="SecondEx1()">turn off bulb!</button><br>
+
+        </div>
+
+        <div style="margin: 32px;">
+
+            <button onclick="document.getElementById('hide').style.display='none'"> Hide!</button>
+
+            <button onclick="document.getElementById('hide').style.display='block'"> Show!</button>
+
+        </div>
+        <br>
+        <hr>
+        <div class="javasc">
+            <h2>Third Example</h2>
+
+            <button onclick="alert('Hello')" style="margin: 8px;">Click me.</button>
+            <div onmouseover="this.style.backgroundColor='blue';" onmouseleave="this.style='none'">
+                My JavaScript event handler</div>
+        </div>
+        <br>
+        <hr>
+
+        <div class="javasc">
+            <h2>Fourth Example String Method</h2>
+            <p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+            <button type="button" onclick="fourthEx()">Try it</button>
+
+            <p id="rep">Please visit Microsoft!</p>
+
+            <button type="button" onclick="fourthEx1()">To Uppercase</button>
+
+            <p id="rep1">converting this sentence into Uppercase!!!</p>
+        </div>
+        <br>
+        <hr>
+        <div class="javasc">
+            <h2>Fifth Example Array</h2>
+            <button type="button" onclick="myArray()">Show Arrays</button>
+            <p>Here are a list of arrays defined in JavaScript</p>
+            <p id="arrays"></p>
+            <p id="arrays1"></p>
+            <p id="arrays2"></p>
+            <p id="arrays3"></p>
+            <p id="arrays4"></p>
+            <p id="arrays5"></p>
+        </div>
+        <br>
+        <hr>
+        <div class="javasc">
+            <h2>Sixth Example Date and switch/case</h2>
+            <p><strong>What day is today? if you want to know click below.</strong></p>
+            <button type="button" onclick="myDay()">Click me!</button>
+            <p id="day"></p>
+
+        </div>
+        <br>
+        <hr>
+
+        <div class="javasc">
+            <h2>Seventh Example RegExpression</h2>
+            <p id="text"><strong>Regular expressions are used to search the patterns or string in the content</strong>
+            </p>
+            <button type="button" onclick="regEx()">Click me!</button>
+            <p id="regex"></p>
+        </div>
+        <br>
+        <hr>
+        <div class="javasc">
+            <h2>Eigth Example errors</h2>
+            <p>We will use <b>Throw, Try , Catch</b> to explain error handling. </p>
+            <label for="number">Insert Number:</label>
+            <input id="number" type="text" name="number">
+            <button type="button" onclick="error()">Press me</button>
+            <p id="errors"></p>
+
+        </div>
+        <br>
+        <hr>
+        <div class="javasc">
+            <h2>Ninth Example objects</h2>
+            <!-- <button type="button">Press me</button>-->
+            <p id="object"></p>
+
+            <script>
+
+                const p = {
+                    firstName: "Arpit",
+                    lastName: " Jain",
+                    age: 23,
+                    profile: "Software Engineer",
+                    newfunc: function () {
+                        return this.firstName + " " + this.lastName;
+                    }
+                };
+
+                //adding new values in object p
+
+                p.hobby = "Sports";
+                document.getElementById("object").innerHTML = "My name is " + p.FirsName + " " + p.lastName +
+                    ". I am " + p.age + " years old and working at Capgemini as a " + p.profile + ". I like " + p.hobby;
+
+                /* document.getElementById("object").innerHTML = "My name is " + p.FirsName +" "+p.lastName+
+                  ". I am " + p["age"] +" years old and working at Capgemini as a " + p["profile"];
+
+                 let text = "";
+                 for (let x in p) {
+                     text += p[x] + " ";
+                 }
+                 document.getElementById("object").innerHTML = text;*/
+
+                //document.getElementById("object").innerHTML = "My name is " + p.newfunc();
+
+            </script>
+        </div>
+        <br>
+        <hr>
+
+        <div class="javasc">
+            <h2>Tenth Example DOM</h2>
+            <p>In this example we will use addeventlistener property. </p>
+            <button id="mybtn">Press me</button>
+            <p id="myfun"></p>
+            <script>
+                var x = document.getElementById("mybtn");
+                x.addEventListener("mouseover", myFun1);
+                x.addEventListener("click", myFun2);
+                x.addEventListener("mouseout", myFun3);
+
+                function myFun1() {
+                    document.getElementById("myfun").innerHTML += "Moused over!<br>";
+                }
+                function myFun2() {
+                    document.getElementById("myfun").innerHTML += "clicked!<br>";
+                }
+                function myFun3() {
+                    document.getElementById("myfun").innerHTML += "Moused leave!<br>";
+                }
+            </script>
+
+        </div>
+        <br>
+        <hr>
+        <div class="javasc">
+            <h2>Eleventh Example API</h2>
+            <p>In this example we will use WEB API. </p>
+            <button onclick="myApi()">Click!</button>
+            <p id="myapi"></p>
+        </div>
+        <br>
+        <hr>
+       
+    </div>
+
+</body>
+
+</html>

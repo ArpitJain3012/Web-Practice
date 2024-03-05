@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="anime.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>Bootstrap</title>
+</head>
+
+<body class="navbar-boot" style="margin: 0;">
+    <ul class="topnav">
+        <li><a class="active" href="navbar-horizontal.html">Home</a></li>
+        <li><a href="animeList.html">Anime List</a></li>
+        <li><a href="java.html">JavaScript</a></li>
+        <li><a href="jquery.html">JQuery</a></li>
+        <li><a href="boot.html">Bootstrap</a></li>
+        <li><a href="example.html">Examples</a></li>
+        <li class="right"><a href="#about">About</a></li>
+    </ul>
+    <div style="margin-left: 20px;">
+        <div class="boot" style="margin-top: 60px;">
+
+            <div class="jumbotron">
+                <h2>First Example</h2>
+                <p>To see responsive page resize it </p>
+            </div>
+            <div class="container p-4 my-4 border bg-info">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h3>Column 1</h3>
+                        <p>This is column has 1/3 of page space and column size is small that is 768px below it will
+                            change its look</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>Column 2</h3>
+                        <p>This is column has 1/3 of page space and column size is small that is 768px below it will
+                            change its look</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>Column 3</h3>
+                        <p>This is column has 1/3 of page space and column size is small that is 768px below it will
+                            change its look</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <hr>
+        <div class="boot">
+
+            <div class="container p-3 my-3 bg-dark text-white">
+                <h2>Second Example</h2>
+                <p>Here using properties of bootstrap to implement containers border and color </p>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <div class="boot">
+
+            <div class="container" style="text-align: center;">
+                <h2>Third Example</h2>
+                <p>Here using properties of bootstrap to implement table </p>
+                <ul style="float: left;">
+                    <li>Class table to create table</li>
+                    <li> Class table-striped for stripes</li>
+                    <li> Class table-border for border</li>
+                </ul>
+
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Firstname</th>
+                            <th>Lastname</th>
+                            <th>Age</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Arpit</td>
+                            <td>Jain</td>
+                            <td>23</td>
+                        </tr>
+                        <tr>
+                            <td>Sanjeev</td>
+                            <td>Jain</td>
+                            <td>53</td>
+                        </tr>
+                        <tr>
+                            <td>Vijendra</td>
+                            <td>Jain</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>Neetu</td>
+                            <td>Bansal</td>
+                            <td>47</td>
+                        </tr>
+                        <tr>
+                            <td>Harshit</td>
+                            <td>Bansal</td>
+                            <td>20</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+                <ul style="float: left;">
+                    <li>Class table to create table</li>
+                    <li> Class table-border for border</li>
+                    <li> Class bg for background color</li>
+                    <li> Class table-hover for hovering</li>
+                    <li> Class text for text color</li>
+                </ul>
+
+
+                <table class="table table-bordered table-hover bg-secondary text-white">
+                    <thead>
+                        <tr>
+                            <th>Firstname</th>
+                            <th>Lastname</th>
+                            <th>Age</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Arpit</td>
+                            <td>Jain</td>
+                            <td>23</td>
+                        </tr>
+                        <tr>
+                            <td>Sanjeev</td>
+                            <td>Jain</td>
+                            <td>53</td>
+                        </tr>
+                        <tr>
+                            <td>Vijendra</td>
+                            <td>Jain</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>Neetu</td>
+                            <td>Bansal</td>
+                            <td>47</td>
+                        </tr>
+                        <tr>
+                            <td>Harshit</td>
+                            <td>Bansal</td>
+                            <td>20</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+
+            </div>
+        </div>
+        <br>
+        <hr>
+        <div class="boot">
+            <div class="container p-3 mt-4">
+                <h2>Fourth Example</h2>
+                <br>
+                <br>
+
+                <h5>Button Types in Bootstrap</h5>
+                <button type="button" class="btn">Basic</button>
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-info">Info</button>
+                <button type="button" class="btn btn-warning">Warning</button>
+                <button type="button" class="btn btn-danger">Danger</button>
+                <button type="button" class="btn btn-dark">Dark</button>
+                <button type="button" class="btn btn-light">Light</button>
+                <button type="button" class="btn btn-link">Link</button>
+                <br><br>
+                <h5>Button Types with Border only</h5>
+                <button type="button" class="btn btn-outline-primary">Primary</button>
+                <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                <button type="button" class="btn btn-outline-success">Success</button>
+                <button type="button" class="btn btn-outline-info">Info</button>
+                <button type="button" class="btn btn-outline-warning">Warning</button>
+                <button type="button" class="btn btn-outline-danger">Danger</button>
+                <button type="button" class="btn btn-outline-dark">Dark</button>
+                <button type="button" class="btn btn-outline-light text-dark">Light</button>
+                <br><br>
+                <h5>Button active and disabled</h5>
+
+                <button type="button" class="btn btn-primary">Primary Button</button>
+                <button type="button" class="btn btn-primary active">Active Primary</button>
+                <button type="button" class="btn btn-primary" disabled>Disabled Primary</button>
+                <a href="#" class="btn btn-primary disabled">Disabled Link</a>
+                <br><br>
+
+                <h5>Button groups</h5>
+
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary">Apple</button>
+                    <button type="button" class="btn btn-primary">Samsung</button>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                            Sony
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Tablet</a>
+                            <a class="dropdown-item" href="#">Smartphone</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <br>
+        <hr>
+        <div class="boot" style="text-align: center;margin: 16px;">
+            <div class="container">
+                <h2>Modal</h2>
+                <div id="over">
+                    <div id="text">
+                        <span class="off">&times;</span>
+                        <form action="">
+                            <div>
+                                <label for="name">Name : </label>
+                            </div>
+                            <div>
+                                <input type="text" id="name" placeholder="Name">
+                            </div>
+
+                            <div>
+                                <label for="email">Email :</label>
+                            </div>
+                            <div>
+                                <input type="email" id="email" size="30" placeholder="Email">
+                            </div>
+                            <button type="submit" id="butt" style="margin: 8px;" onclick="saveFile()">Submit</button>
+                        </form>
+
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-primary" id="btns">Display Modal</button>
+                <script>
+                    var on = document.getElementById("over");
+                    var btn = document.getElementById("btns");
+                    var span = document.getElementsByClassName("off")[0];
+                    btn.onclick = function () {
+                        on.style.display = "block";
+                    }
+                    span.onclick = function () {
+                        on.style.display = "none";
+                    }
+                    window.onclick = function (event) {
+                        if (event.target == on) {
+                            on.style.display = "none";
+                        }
+                    }
+
+                    let saveFile = () => {
+                        const name = document.getElementById("name");
+                        const mail = document.getElementById("email");
+
+                        let data = ' \r Name: ' + name.value + ' \r\n ' +
+                            ' Email : ' + mail.value;
+
+                        const txt = new Blob([data], { type: 'text/plain' });
+                        const sFile = 'modal.txt';
+
+                        let newLink = document.createElement("a");
+                        newLink.download = sFile;
+
+                        if (window.webkitURL != null) {
+                            newLink.href = window.webkitURL.createObjectURL(txt);
+                        } else {
+                            newLink.href = window.URL.createObjectURL(txt);
+                            newLink.style.display = "none";
+                            document.body.appendChild(newLink);
+                        }
+                        newLink.click();
+
+
+                    }
+
+
+                </script>
+            </div>
+
+
+        </div>
+        <br>
+        <hr>
+        <div class="boot">
+            <div class="container-fluid">
+                <h2 style="text-align: center;">Sixth Example</h2>
+                <p style="text-align: center;"><strong>Bootstrap Forms classes</strong></p>
+                <ul>
+                    <li>Form-Group</li>
+                    <li>Form-Control</li>
+                    <li>Was-validated</li>
+                    <li>
+                        <dl>validate-feedback</dl>
+                        <dd>valid-feedback</dd>
+                        <dd>invalid-feedback</dd>
+                    </li>
+
+                </ul>
+                <br><br>
+                <p><strong>Form:</strong></p>
+
+                <div>
+                    <form action="" class="was-validated">
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" placeholder="Email" class="form-control"
+                                required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" id="name" placeholder="Name" class="form-control" required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="Age">Age:</label>
+                            <input type="number" name="age" id="age" placeholder="age" class="form-control" required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+
+                        <div class="form-group form-check">
+                            <label class="fomr-check-label">
+                                <input type="checkbox" class="form-check-input" name="remember" required>Remeber Me
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Check this box.</div>
+                            </label>
+
+                        </div>
+                        <button type="submit" class="btn btn-info">Submit</button>
+
+
+                    </form>
+                </div>
+                <br>
+                <hr>
+                <!-- <div class="boot">
+                    <h2 style="text-align: center;">Seventh Example</h2>
+                    <p style="text-align: center;"><strong>Bootstrap Slides</strong></p>
+                    <!-- <div id="slides" class="carousel slide" data-ride="carousel">
+                        <ul class="carousel-indicators">
+                            <li data-target="#slides" data-slide-to="0" class="active"></li>
+                            <li data-target="#slides" data-slide-to="1"></li>
+                            <li data-target="#slides" data-slide-to="2"></li>
+                            <li data-target="#slides" data-slide-to="3"> </li>
+
+                        </ul>
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="shounen2.jpg" alt="" width="1000" height="400">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="sports.jpg" alt="" width="1000" height="400">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="isekai.jpg" alt="" width="1000" height="400">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="bulbon.jpg" alt="" width="1000" height="400">
+                            </div>
+
+                        </div>
+                        <a class="carousel-control-prev" href="#slides" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#slides" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                    <div id="demo" class="carousel slide" data-ride="carousel">
+
+                        <!-- Indicators 
+                        <ul class="carousel-indicators">
+                          <li data-target="#demo" data-slide-to="0" class="active"></li>
+                          <li data-target="#demo" data-slide-to="1"></li>
+                          <li data-target="#demo" data-slide-to="2"></li>
+                          <li data-target="#demo" data-slide-to="3"></li>
+                        </ul>
+                        
+                        <!-- The slideshow 
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="shounen2.jpg" alt="Los Angeles" width="500" height="500">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="sports.jpg" alt="Chicago" width="500" height="500">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="isekai.jpg" alt="New York" width="500" height="500">
+                          </div>
+                        </div>
+                        
+                        <!-- Left and right controls 
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                        </a>
+                      </div>
+                </div> -->
+                <div class="boot">
+                    <div class="container">
+                        <h2>Seventh Example</h2>
+                        <p>Modal with Bootstrap</p>
+                        <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-secondary">Open
+                            Modal</button>
+                        <!--The modal -->
+                        <!-- Fading Modal 
+                           <div id="myModal" class="modal fade">-->
+                        <div id="myModal" class="modal">
+                            <div class="modal-dialogue">
+                                <div class="modal-content">
+
+                                    <!--The modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title"> My Modal</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                                    </div>
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <textarea name="text" id="aText" cols="30" rows="10"></textarea>
+                                        <button type="submit" id="buttons" onclick="fileSave()">Save</button>
+                                    </div>
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        let fileSave = () => {
+                            const text = document.getElementById("aText");
+
+                            let data = ' Text : ' + text.value;
+
+                            const blb = new Blob([data], { type: 'text/plain' });
+                            const save = 'newfile.txt'
+
+                            let links = document.createElement("a");
+                            links.download = save;
+
+                            if (window.HTMLMediaElement != null) {
+                                links.href = window.webkitURL.createObjectURL(blb);
+                            } else {
+                                links.href = window.URL.createObjectURL(blb);
+                                links.style.display = "none";
+                                document.body.appendChild(links);
+                            }
+                            links.click();
+                        }
+
+
+                    </script>
+                </div>
+            </div>
+
+
+</body>
+
+</html>

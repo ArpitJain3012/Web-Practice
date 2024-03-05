@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="anime.css">
+    <title>JavaScript</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body class="navbar-Jquery" style="margin: 0;height: 1200px;">
+    <ul class="topnav">
+        <li><a class="active" href="navbar-horizontal.html">Home</a></li>
+        <li><a href="animeList.html">Anime List</a></li>
+        <li><a href="java.html">JavaScript</a></li>
+        <li><a href="jquery.html">JQuery</a></li>
+        <li><a href="boot.html">Bootstrap</a></li>
+        <li><a href="example.html">Examples</a></li>
+        <li class="right"><a href="#about">About</a></li>
+    </ul>
+    <div style="margin-left: 20px;">
+        <div class="jquery" style="margin-top: 60px;">
+            <h2>First JQ example</h2>
+            <p id="jq">Content of this para will get disappear when the button gets clicked!!</p>
+            <p>Content of this para will not not get disappeared</p>
+            <button type="button" id="hide">Hide!</button>
+            <button type="button" id="show">Show</button>
+            <p>With this toggle button we can hide and show with a single button</p>
+            <button type="button" id="toggle">Toggle</button>
+            <script>
+                // this works same as below commented code.
+                $(function () {
+                    $("#hide").click(function () {
+                        $("#jq").hide();
+                    });
+                    $("#show").click(function () {
+                        $("#jq").show();
+                    });
+                    $("#toggle").click(function () {
+                        $("#jq").toggle();
+                    });
+                });
+                // $(document).ready(function () {
+                //     $("button").click(function () {
+                //         $("#jq").hide();
+                //     });
+                // });
+            </script>
+        </div>
+        <br>
+        <hr>
+        <div class="jquery">
+            <h2>Second JQ example</h2>
+            <p id="sec">Content of this p tag will get change
+                according to different events that occur with the help of mouse </p>
+            <script>
+                $(document).ready(function () {
+                    $("#sec").on({
+                        mouseenter: function () {
+                            $(this).css("background-color", "lightgray");
+                        },
+                        mouseleave: function () {
+                            $(this).css("background-color", "lightblue");
+                        },
+                        click: function () {
+                            $(this).css("background-color", "yellow");
+                        }
+                    });
+                });
+            </script>
+        </div>
+        <br>
+        <hr>
+        <div class="jquery">
+            <h2>Third JQ example Fade Effect</h2>
+
+            <div style="margin: 16px;">
+                <button type="button" id="fout">Fade out the lights!</button>
+                <button type="button" id="fin">Fade In the lights!</button>
+                <button type="button" id="ftoggle">All In One!</button>
+                <button type="button" id="fto">Opacity!</button>
+            </div>
+            <div id="div1"
+                style="background-color: red;border: 1px solid black; width: 50px; height: 50px;border-radius: 50px;margin: 16px;">
+            </div>
+            <div id="div2"
+                style="background-color: yellow;border: 1px solid black; width: 50px; height: 50px;border-radius: 50px;margin: 16px;">
+            </div>
+            <div id="div3"
+                style="background-color: green;border: 1px solid black; width: 50px; height: 50px;border-radius: 50px;margin: 16px;">
+            </div>
+
+
+            <div style="margin: 16px;">
+                <button type="button" id="animate">Animate below square!</button>
+            </div>
+            <div style="margin: 16px;">
+                <div id="anima" style="width: 100px;height: 100px;position: relative;background-color: blue;">
+                </div>
+            </div>
+
+
+            <script>
+                $(function () {
+                    $("#fout").click(function () {
+                        $("#div1").fadeOut();
+                        $("#div2").fadeOut("slow");
+                        $("#div3").fadeOut(2000);
+                    });
+                    $("#fin").click(function () {
+                        $("#div1").fadeIn();
+                        $("#div2").fadeIn("slow");
+                        $("#div3").fadeIn(2000);
+                    });
+                    $("#ftoggle").click(function () {
+                        $("#div1").fadeToggle();
+                        $("#div2").fadeToggle("slow");
+                        $("#div3").fadeToggle(2000);
+                    });
+                    $("#fto").click(function () {
+                        $("#div1").fadeTo("slow", 0.7);
+                        $("#div2").fadeTo("slow", 0.15);
+                        $("#div3").fadeTo("slow", 0.5);
+                    });
+                    $("#animate").click(function () {
+                        // $("#anima").animate({
+                        //     left: '600px',
+                        //     height: '150px',
+                        //     width: '150px',
+                        //     opacity: 0.2
+                        // });
+                        var d = $("#anima");
+                        d.animate({ height: '300px', opacity: '0.4' }, "slow");
+                        d.animate({ width: '300px', opacity: '0.8' }, "slow");
+                        d.animate({ height: '100px', opacity: '0.4' }, "slow");
+                        d.animate({ width: '100px', opacity: '0.8' }, "slow");
+                    });
+                });
+
+            </script>
+        </div>
+        <br>
+        <hr>
+        <div class="jquery">
+            <h2>Fourth Example JQ HTML Gets</h2>
+            <p id="gets"> It is a message displayed on <b>alert</b> when button get clicked.</p>
+            <button id="gets1">Display Text</button>
+            <button id="gets2">Display Html</button>
+
+            <p>Name: <input type="text" id="gets3" value="Default"></p>
+            <button id="gets4">Show Value</button>
+
+            <script>
+                $(document).ready(function () {
+                    $("#gets1").click(function () {
+                        alert("Text : " + $("#gets").text());
+                    });
+                    $("#gets2").click(function () {
+                        alert("HTML : " + $("#gets").html());
+                    });
+                    $("#gets4").click(function () {
+                        alert("Value : " + $("#gets3").val());
+                    });
+                });
+            </script>
+        </div>
+        <br>
+        <hr>
+        <div class="jquery">
+            <h2>Fourth Example JQ HTML Sets</h2>
+            <p id="sets1"> This Text will get changed by clicking of button.</p>
+            <p id="sets2" style="font-style: italic;color: blueviolet;"> This Text will get changed into HTML by
+                clicking
+                of button.</p>
+            <p>Name: <input type="text" id="sets3" value="Hello JQ"></p>
+
+            <button id="btns1">Change Text</button>
+            <button id="btns2">Change Html</button>
+            <button id="btns3">Change Value</button>
+
+            <script>
+                $(document).ready(function () {
+                    $("#btns1").click(function () {
+                        $("#sets1").text("Text Got changed!!");
+                    });
+                    $("#btns2").click(function () {
+                        $("#sets2").html("<b>New Html Format</b>");
+                    });
+                    $("#btns3").click(function () {
+                        $("#sets3").val("Arpit Jain");
+                    });
+                });
+            </script>
+        </div>
+        <br>
+        <hr>
+        <div class="jquery">
+            <h2>Sixth Example JQ Dimensions</h2>
+            <div id="css1"
+                style="background-color: lightblue;border: 2px solid lightblue; width: 50px; height: 50px;margin:8px;padding: 20px;overflow: hidden;">
+            </div>
+            <button id="css2">Click to change height and width </button>
+            <button id="css3">Click to show height and width </button>
+
+            <script>
+                $(document).ready(function () {
+                    $(css2).click(function () {
+                        $(css1).height(500).width(500);
+                    });
+                    $(css3).click(function () {
+                        var x = "";
+                        x += "Width of block is : " + $(css1).width() + "<br>";
+                        x += "Heigth of block is : " + $(css1).height() + "<br>";
+                        x += "Inner Width of block is : " + $(css1).innerWidth() + "<br>";
+                        x += "Inner Heigth of block is : " + $(css1).innerHeight() + "<br>";
+                        x += "Outer Width of block is : " + $(css1).outerWidth() + "<br>";
+                        x += "Outer Heigth of block is : " + $(css1).outerHeight() + "<br>";
+                        x += "Outer Width of block including margin is : " + $(css1).outerWidth(true) + "<br>";
+                        x += "Outer Heigth of block including margin is : " + $(css1).outerHeight(true);
+                        $(css1).html(x);
+                    });
+
+                });
+            </script>
+
+        </div>
+        <br>
+        <hr>
+       
+    </div>
+</body>
+
+</html>

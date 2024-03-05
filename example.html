@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="anime.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>Examples</title>
+</head>
+
+<body class="examples" style="margin: 0;">
+    <ul class="topnav">
+        <li><a class="active" href="navbar-horizontal.html">Home</a></li>
+        <li><a href="animeList.html">Anime List</a></li>
+        <li><a href="java.html">JavaScript</a></li>
+        <li><a href="jquery.html">JQuery</a></li>
+        <li><a href="boot.html">Bootstrap</a></li>
+        <li><a href="example.html">Examples</a></li>
+        <li class="right"><a href="#about">About</a></li>
+    </ul>
+
+    <div>
+
+        <div class="ex" style="margin-top: 60px;">
+            <h2>Vertical Icon Bars</h2>
+            <div class="v-icons">
+                <a href="" class="active"><i class="fa fa-home"> Home</i></a>
+                <a href=""><i class="fa fa-search"> Search</i></a>
+                <a href=""><i class="fa fa-envelope"> Mail</i></a>
+                <a href=""><i class="fa fa-globe"> Global</i></a>
+                <a href=""><i class="fa fa-trash"> Bin</i></a>
+            </div>
+            <h2>Horizontal Icon Bars</h2>
+            <div class="h-icons">
+                <a href="" class="active"><i class="fa fa-home"> Home</i></a>
+                <a href=""><i class="fa fa-search"> Search</i></a>
+                <a href=""><i class="fa fa-envelope"></i> Mail</a>
+                <a href=""><i class="fa fa-globe"></i> Global</a>
+                <a href=""><i class="fa fa-trash"></i> Bin</a>
+            </div>
+        </div>
+        <br>
+        <hr>
+
+        <div class="ex">
+            <h2>Accordians</h2>
+            <button type="button" class="accord">Secton 1<span class="plus">&#43;</span></button>
+            <div class="pan1">
+                <p>Have the central idea in your mind and convey it right at the beginning. A lot of times the central
+                    idea is conveyed right in the first sentence. “Oceans are slowly becoming human dust-bins.”
+
+                    Once the statement of your main idea is out there, you will be explaining or providing validation
+                    points. This way, your main idea isn’t hanging loose. This is going to make sure how the reader is
+                    going to interpret the main idea, because of you leading them to it.
+
+                    This is where the writer explains the focus point. “Garbage in the ocean comes from trash from trash
+                    cans, the streets, and landfills that gets blown into sewers, rivers, or directly into the ocean.
+                    The trash makes its way into storm drains. Trash travels through sewer pipes, into waterways, and
+                    finally into the ocean.”</p>
+            </div>
+
+            <button type="button" class="accord">Secton 2 <span class="plus">&#43;</span></button>
+            <div class="pan1">
+                <p>Have the central idea in your mind and convey it right at the beginning. A lot of times the
+                    central
+                    idea is conveyed right in the first sentence. “Oceans are slowly becoming human dust-bins.”
+
+                    Once the statement of your main idea is out there, you will be explaining or providing
+                    validation
+                    points. This way, your main idea isn’t hanging loose. This is going to make sure how the reader
+                    is
+                    going to interpret the main idea, because of you leading them to it.
+
+                    This is where the writer explains the focus point. “Garbage in the ocean comes from trash from
+                    trash
+                    cans, the streets, and landfills that gets blown into sewers, rivers, or directly into the
+                    ocean.
+                    The trash makes its way into storm drains. Trash travels through sewer pipes, into waterways,
+                    and
+                    finally into the ocean.”</p>
+            </div>
+
+            <button type="button" class="accord">Secton 3 <span class="plus">&#43;</span></button>
+            <div class="pan1">
+                <p>Have the central idea in your mind and convey it right at the beginning. A lot of times the
+                    central
+                    idea is conveyed right in the first sentence. “Oceans are slowly becoming human dust-bins.”
+
+                    Once the statement of your main idea is out there, you will be explaining or providing
+                    validation
+                    points. This way, your main idea isn’t hanging loose. This is going to make sure how the
+                    reader is
+                    going to interpret the main idea, because of you leading them to it.
+
+                    This is where the writer explains the focus point. “Garbage in the ocean comes from trash
+                    from trash
+                    cans, the streets, and landfills that gets blown into sewers, rivers, or directly into the
+                    ocean.
+                    The trash makes its way into storm drains. Trash travels through sewer pipes, into
+                    waterways, and
+                    finally into the ocean.”</p>
+
+            </div>
+            <script>
+                var accord = document.getElementsByClassName("accord");
+
+                var i;
+                for (i = 0; i < accord.length; i++) {
+                    accord[i].addEventListener("click", function () {
+                        this.classList.toggle("active");
+                        var pan = this.nextElementSibling;
+
+                        if (pan.style.display === "block") {
+                            pan.style.display = "none";
+                        } else {
+                            pan.style.display = "block";
+                        }
+
+
+                    });
+                }
+            </script>
+
+        </div>
+        <br>
+        <hr>
+        <div class="ex">
+            <div id="sidenav" class="mynav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="" class="active">Home</a>
+                <a href="">Contact</a>
+                <a href="">View</a>
+                <a href="">Help</a>
+            </div>
+            <div id="main">
+                <h2>Sidebar Navigations</h2>
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+            </div>
+            <script>
+                var side = document.getElementById("sidenav");
+                var main = document.getElementById("main");
+                function openNav() {
+                    side.style.width = "200px";
+                    // main.style.marginleft = "210px"
+                }
+
+                function closeNav() {
+                    side.style.width = "0";
+                    // main.style.marginleft = "0";
+                }
+                // window.onclick = function (event) {
+                //         if (event.target == side) {
+                //             side.style.width = "0";
+                //         }
+            </script>
+
+        </div>
+
+        <br>
+        <hr>
+        <div class="ex">
+
+            <h2>Hoverable Sidenav Buttons</h2>
+            <p>Click on the button to the page for sidebars</p>
+            <button style="background-color: blue;padding: 4px;margin: 8px;"><a href="new.html"
+                    style="text-decoration: none;color: white;">Hover Page</a></button>
+
+        </div>
+        <br>
+        <hr>
+        <div class="ex">
+            <h2>Login Modal Forms</h2>
+
+            <div class="formss">
+                <button onclick="document.getElementById('form01').style.display='block'"
+                    style="width: auto;">Login</button>
+
+                <div id="form01" class="myForm">
+
+                    <form class="modal-content animate" action="" method="post">
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('form01').style.display='none'" class="close"
+                                title="Close Form">&times;</span>
+                            <img src="profile.png" alt="Profile" class="prof">
+                        </div>
+
+                        <div class="container">
+                            <label for="uName"><b> Username:</b></label>
+                            <input type="text" placeholder="Enter Username..." name="uName" required>
+
+                            <label for="pssw"><b> Password:</b></label>
+                            <input type="password" placeholder="Enter Password..." name="pssw" required>
+
+                            <button type="submit">Login</button>
+
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember"> Remember me </label>
+                        </div>
+
+                        <div class="container" style="background-color:#f1f1f1">
+                            <button type="button" onclick="document.getElementById('form01').style.display='none'"
+                                class="closebtns">Cancel</button>
+                            <span class="psw">Forget <a href="#">password?</a></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <script>
+                var mod = document.getElementById('form01');
+                window.onclick = function (event) {
+                    if (event.target == mod) {
+                        mod.style.display = "none";
+                    }
+                }
+            </script>
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>

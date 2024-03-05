@@ -1,0 +1,481 @@
+/* navbar-horizontal */
+.navbar{
+    margin: 0;
+    background-image: linear-gradient(red, yellow);
+    background-repeat: no-repeat;
+}
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+    top: 0;
+    position: fixed;
+}
+
+ul.topnav li {
+    float: left;
+}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+ul.topnav li a.active {
+    background-color: #04AA6D;
+}
+
+ul.topnav li.right {
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+
+    ul.topnav li.right,
+    ul.topnav li {
+        float: none;
+    }
+}
+
+/* Anime List page */
+.anime {
+    counter-reset: category;
+    margin: 0;
+    background-image: linear-gradient(blue,red);
+  }
+  .category{
+      margin: 8px 16px;
+      width: 50%;
+      border: 4px solid brown;
+      border-radius: 20px;
+      padding: 8px;
+      background-color: rgb(226, 223, 223);
+      transition: width 1s;
+      cursor: pointer;
+  }
+  .category:hover{
+      width: 80%;
+  }
+  .category img{
+    float: right;
+    width: 10%;
+    transition: 1s;
+  }
+  .category img:hover{
+    width: 40%;
+}
+
+  .category h1 {
+    counter-reset: anime;
+    color: rgb(43, 43, 177);
+  }
+
+  .category h1::before {
+    counter-increment: category;
+    content: "Category " counter(category) ". ";
+  }
+
+  .category h2::before {
+    counter-increment: anime;
+    content: "Anime " counter(category) ". " counter(anime) " ";
+    color: coral;
+  }
+  .category h2{
+      color:indianred;
+  }
+
+    /* JavaScript */
+
+  .navbar-javaScript{
+      counter-reset: js;
+  }
+  .javasc h2 {
+      color: rgb(100, 6, 6);
+  }
+
+  .javasc h2::before{
+      counter-increment: js;
+      content: "JS " counter(js) ". ";
+  }
+  /* Jquery */
+  .navbar-Jquery{
+    counter-reset: jq;
+}
+.jquery h2 {
+    color: rgb(100, 6, 6);
+}
+
+.jquery h2::before{
+    counter-increment: jq;
+    content: "JQ " counter(jq) ". ";
+}
+  /* Bootstrap */
+.navbar-boot{
+    counter-reset: boot;
+}
+.boot h2 {
+    color: rgb(204, 35, 35);
+}
+
+.boot h2::before{
+    counter-increment: boot;
+    content: "Boot " counter(boot) ". ";
+}
+
+.boot .container{
+    text-align: center;
+}
+.boot .jumbotron{
+    text-align: center;
+}
+ div#over{
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0);
+    background-color: rgb(0, 0, 0,0.1);
+    z-index:2;
+    cursor: pointer;
+    overflow: auto;
+}
+
+ div#text{
+     background-color: rgb(108, 108, 194);
+     position:absolute;
+     top: 40%;
+     left: 20%;
+     color: white;
+     margin: auto;
+     padding: 10px;
+     border: 1px solid black;
+     width: 60%;
+     height: 200px;
+ }
+
+ .off{
+     color: #aaaaaa;
+     float: right;
+     font-size: 30px;
+     font-weight: bold;
+ }
+
+ .off:hover,.off:focus{
+     color: #000;
+     text-decoration: none;
+     cursor: pointer;
+ }
+ #overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 3;
+    cursor: pointer;
+  }
+
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Examples */
+
+  /*  icons */
+  .examples .v-icons {
+    width: 100px;
+    background-color: #555;
+  }
+  
+  .examples .v-icons a {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 25px;
+  }
+  
+  .examples .v-icons a:hover {
+    background-color: #000;
+  }
+  
+  .examples .v-icons .active {
+    background-color: #04AA6D;
+  }
+
+  .examples .h-icons{
+      width: 100%;
+      background-color: #555;
+      overflow: auto;
+      padding: 0 8px 0 0;
+  }
+
+  .examples .h-icons a{
+      float: left;
+      padding: 16px;
+      color: white;
+      font-size: 25px;
+      text-decoration: none;
+  }
+  .examples .h-icons a:hover{
+      background-color: black;
+  }
+  .examples .h-icons .active{
+      background-color: #04AA6D;
+  }
+  
+  .examples .ex{
+      margin: 20px;
+  }
+
+  /*  accordians */
+
+  .examples .ex .accord{
+      background-color: #eee;
+      color: #444;
+      padding: 18px;
+      width: 100%;
+      cursor: pointer;
+      text-align: left;
+      border: 1px solid #444;
+      outline: none;
+      transition: 0.4s;
+
+  }
+
+  .active, .examples .ex .accord:hover {
+    background-color:#ccc;
+  }
+  
+  .examples .ex .pan1{
+      background-color: white;
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+  }
+  .examples .ex .accord .plus{
+    color: #aaaaaa;
+     float: right;
+     font-size: 20px;
+     font-weight: bold;
+  }
+
+  .examples .ex .accord .plus:hover,.examples .ex .accord .plus:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Sidebar Navigations */
+
+.mynav{
+    height: 100%;
+    width: 0;
+    background-color: #111;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: 0.6s;
+    padding-top: 40px;
+}
+.mynav a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    display: block;
+    transition: 0.3s;
+    padding: 8px 8px 8px 20px;
+}
+.mynav a:hover:not(.active){
+    background-color: #f1f1f1;
+    color: black;
+}
+.mynav .closebtn{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 30px;
+    padding: 0;
+    margin-left: 50px;
+}
+.mynav .active{
+    background-color: #04AA6D;
+}
+/* #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  } */
+
+@media screen and (max-height: 450px) {
+    .mynav {padding-top: 15px;}
+    .mynav a {font-size: 18px;}
+  }
+
+  /* Hoverable sidebars */
+
+ #hov a{
+   position: absolute;
+     left: -80px;
+     transition: 0.3s;
+     padding: 16px;
+     width: 100px;
+     text-decoration: none;
+     font-size: 20px;
+     color: white;
+     border-radius: 0px 5px 5px 0px;
+
+  }
+  #hov a:hover{
+      left: 0;
+  }
+
+  #home{
+    top: 20px;
+    background-color: #04AA6D;
+  }
+  #contacts{
+      top: 80px;
+      background-color: #2196f3;
+  }
+ #view{
+    top: 140px;
+    background-color: #f44336;
+  }
+
+#help{
+    top: 200px;
+    background-color: #555
+  }
+  
+  /* Login Modal Form */
+
+  .ex .formss input[type=text] , input[type=password]{
+      display: inline-block;
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 1px solid black;
+  }
+
+  .ex .formss button{
+      background-color: #04AA6D;
+      padding: 14px 20px;
+      margin: 8px 0;
+      color: white;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+  }
+
+  .ex .formss button:hover{
+      opacity: 0.8;
+  }
+  
+  .ex .formss button.closebtns{
+      width: auto;
+      padding: 10px 18px;
+      background-color: #f44336;
+  }
+
+  .ex .formss .imgcontainer{
+      text-align: center;
+      margin: 24px 0 12px 0;
+      position: relative;
+  }
+  .ex .formss .imgcontainer .prof{
+    width: 25%;
+    border-radius: 60%;
+    size: 100;
+  }
+  .ex .formss .container{
+      padding: 16px;
+  }
+  
+  .ex .formss .container span.psw{
+      float: right;
+      padding-top: 16px;
+  }
+
+  .ex .formss .myForm {
+       display: none;
+       position: fixed;
+       z-index: 1;
+       left: 0;
+       top: 0;
+       width: 100%;
+       height: 100%;
+       overflow: auto;
+       background-color: rgb(0,0,0); /* Fallback color */
+       background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+       padding-top: 60px;
+  }
+
+  .ex .formss .modal-content{
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .ex .formss .close{
+      position: absolute;
+      right: 25px;
+      top:0;
+      color: #000;
+      font-size: 35px;
+      font-weight: bold;
+      cursor: pointer;
+  }
+
+  .ex .formss .close:hover,
+  .ex .formss .close:focus{
+      color: red;
+      background-color: #eae5e5;
+      opacity: 0.4;
+  }
+
+  .ex .formss  .animate{
+      -webkit-animation: animatezoom 0.8s;
+      animation: animatezoom 0.8s;
+  }
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+
+  @media screen and (max-width: 300px) {
+    .ex .formss  span.psw {
+       display: block;
+       float: none;
+    }
+    .ex .formss   .closebtns {
+       width: 100%;
+    }
+  }
+ 
